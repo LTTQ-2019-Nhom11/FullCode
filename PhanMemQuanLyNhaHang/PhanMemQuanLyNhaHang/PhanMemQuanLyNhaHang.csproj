@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2EBCACA8-430F-433D-B3CF-CFC1E06FB19E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhanMemQuanLyNhaHang</RootNamespace>
+    <AssemblyName>PhanMemQuanLyNhaHang</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.1" />
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.1" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.1.UI, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.Extensions, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.Wizard, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.1" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Extensions, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Interop.Excel">
+      <HintPath>bin\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Views\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\formCheBien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formCheBien.Designer.cs">
+      <DependentUpon>formCheBien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formGoiMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formGoiMon.Designer.cs">
+      <DependentUpon>formGoiMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formHoaDon.Designer.cs">
+      <DependentUpon>formHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formNCC.Designer.cs">
+      <DependentUpon>formNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formNguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formNguyenLieu.Designer.cs">
+      <DependentUpon>formNguyenLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formNhanVien.Designer.cs">
+      <DependentUpon>formNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formThanhToanNL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formThanhToanNL.Designer.cs">
+      <DependentUpon>formThanhToanNL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formThucDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formThucDon.Designer.cs">
+      <DependentUpon>formThucDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formXacNhanNhapNL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formXacNhanNhapNL.Designer.cs">
+      <DependentUpon>formXacNhanNhapNL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formXuatNL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formXuatNL.Designer.cs">
+      <DependentUpon>formXuatNL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\myDataBases.cs" />
+    <Compile Include="Views\ViewHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ViewHoaDon.Designer.cs">
+      <DependentUpon>ViewHoaDon.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\formCheBien.resx">
+      <DependentUpon>formCheBien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formGoiMon.resx">
+      <DependentUpon>formGoiMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formHoaDon.resx">
+      <DependentUpon>formHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formNCC.resx">
+      <DependentUpon>formNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formNguyenLieu.resx">
+      <DependentUpon>formNguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formNhanVien.resx">
+      <DependentUpon>formNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formThanhToanNL.resx">
+      <DependentUpon>formThanhToanNL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formThucDon.resx">
+      <DependentUpon>formThucDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formXacNhanNhapNL.resx">
+      <DependentUpon>formXacNhanNhapNL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formXuatNL.resx">
+      <DependentUpon>formXuatNL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ViewHoaDon.resx">
+      <DependentUpon>ViewHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-1483081811721.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon42-2020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-invoice--icon-png-image_4022139.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-carrot-icon-download-png-image_4575250.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\com.td.yeuamthucviet.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
